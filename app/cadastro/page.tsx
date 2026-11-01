@@ -68,9 +68,9 @@ export default function CadastroPage() {
 
         <div className="mx-auto mt-12 grid max-w-5xl gap-4 md:grid-cols-2">
           <div className="glass flex flex-col gap-4 rounded-3xl p-6 sm:p-8">
-            <h2 className="text-xl font-semibold tracking-tight">Dúvidas? Fale comigo</h2>
+            <h2 className="text-xl font-semibold tracking-tight">Dúvidas? Fale com a gente</h2>
             <p className="text-sm text-muted-foreground">
-              Na comunidade do WhatsApp você tira dúvidas direto comigo e recebe suporte mais rápido.
+              Na comunidade do WhatsApp você tira dúvidas direto com a equipe e recebe suporte mais rápido.
             </p>
             <CommunityLinks className="flex flex-col gap-3" />
           </div>

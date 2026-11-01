@@ -9,14 +9,14 @@ const env = (valor: string | undefined, padrao: string) => (valor && valor.trim(
 /** Código de convite da Hub usado em todo o site (textos, FAQ, chat, SEO e link de cadastro). */
 export const REFERRAL_CODE = env(process.env.NEXT_PUBLIC_CODIGO_INDICACAO, 'WINHUB').toUpperCase()
 
-/** Nome do site/marca (aba do navegador, rodapé, Open Graph). PROVISÓRIO. */
-export const SITE_NAME = env(process.env.NEXT_PUBLIC_SITE_NOME, 'Hub Win')
+/** Nome do site/marca (aba do navegador, rodapé, Open Graph). */
+export const SITE_NAME = env(process.env.NEXT_PUBLIC_SITE_NOME, 'Hub Robotics')
 
-/** Nome de quem atende (comunidade, atendimento, exemplos do painel). PROVISÓRIO. */
+/** Quem atende, no texto da comunidade. Sem nome de pessoa de propósito. */
 export const RESPONSAVEL_NOME = env(process.env.NEXT_PUBLIC_RESPONSAVEL_NOME, 'a equipe')
 
-/** Perfil do Instagram, sem @. PROVISÓRIO: troque pelo perfil do novo site. */
-export const INSTAGRAM_USUARIO = env(process.env.NEXT_PUBLIC_INSTAGRAM_USUARIO, 'hubwin').replace(/^@/, '')
+/** Perfil do Instagram, sem @. */
+export const INSTAGRAM_USUARIO = env(process.env.NEXT_PUBLIC_INSTAGRAM_USUARIO, 'hubcap_oficial').replace(/^@/, '')
 export const INSTAGRAM_URL = `https://instagram.com/${INSTAGRAM_USUARIO}`
 
 /** Número do atendimento (só dígitos, com DDI). Vem da Vercel: NEXT_PUBLIC_WHATSAPP_ATENDIMENTO. */

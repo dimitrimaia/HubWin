@@ -84,7 +84,7 @@ export const COMUNIDADE_PADRAO: ConteudoComunidade = {
   titulo: `Entre na comunidade ${SITE_NAME} e fale direto com a gente`,
   texto:
     `Um grupo para quem grava na Hub Data: contato direto com ${RESPONSAVEL_NOME}, respostas rápidas para suas dúvidas, dicas para aprovar mais vídeos e suporte no começo.`,
-  beneficios: ['Tire dúvidas direto comigo', 'Suporte mais rápido', 'Avisos de novas tarefas e sorteios'],
+  beneficios: ['Tire dúvidas direto com a equipe', 'Suporte mais rápido', 'Avisos de novas tarefas e sorteios'],
   botao: 'Entrar na comunidade',
   instagramTexto: `Bastidores, tutoriais rápidos, resultados de quem já grava e os sorteios do código ${REFERRAL_CODE}.`,
 }

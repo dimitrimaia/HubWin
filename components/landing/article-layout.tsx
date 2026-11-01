@@ -132,7 +132,7 @@ export function ArticleLayout({ path, title, description, eyebrow, heading, intr
           </aside>
 
           <div className="glass mt-12 flex flex-col gap-4 rounded-3xl p-6 text-center sm:p-8">
-            <h2 className="text-xl font-semibold tracking-tight">Ficou com dúvida? Fale comigo</h2>
+            <h2 className="text-xl font-semibold tracking-tight">Ficou com dúvida? Fale com a gente</h2>
             <CommunityLinks className="grid gap-3 sm:grid-cols-2" />
           </div>
         </div>

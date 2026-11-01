@@ -27,7 +27,8 @@ export default function OpengraphImage() {
             <path d={LOGO_PATH} fill="#1ec872" />
           </svg>
           <div style={{ display: 'flex', fontSize: 44, fontWeight: 700 }}>
-            Hub <span style={{ color: '#1ec872', marginLeft: 12 }}>Capture</span>
+            {SITE_NAME.split(' ')[0]}
+            <span style={{ color: '#1ec872', marginLeft: 12 }}>{SITE_NAME.split(' ').slice(1).join(' ')}</span>
           </div>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
