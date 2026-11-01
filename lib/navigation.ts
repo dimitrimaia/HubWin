@@ -1,0 +1,20 @@
+import { REFERRAL_CODE, TUTORIAIS_PATH } from './site'
+
+export const sectionLinks = [
+  { href: '/#como-funciona', label: 'Como funciona' },
+  { href: '/#codigo', label: `Código ${REFERRAL_CODE}` },
+  { href: '/#colab', label: 'Influencers' },
+  { href: '/#comunidade', label: 'Comunidade' },
+  { href: '/#tutorial', label: 'Tutorial' },
+  { href: '/#modos', label: 'Ganhos' },
+  { href: '/#guias', label: 'Guias' },
+  { href: '/#faq', label: 'FAQ' },
+]
+
+export const headerLinks = [
+  { href: TUTORIAIS_PATH, label: 'Tutoriais' },
+  { href: '/#codigo', label: `Código ${REFERRAL_CODE}` },
+  { href: '/#colab', label: 'Influencers' },
+  { href: '/#comunidade', label: 'Comunidade' },
+  { href: '/#faq', label: 'FAQ' },
+]
