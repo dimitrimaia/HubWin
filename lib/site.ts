@@ -22,14 +22,8 @@ export const INSTAGRAM_URL = `https://instagram.com/${INSTAGRAM_USUARIO}`
 /** Número do atendimento (só dígitos, com DDI). Vem da Vercel: NEXT_PUBLIC_WHATSAPP_ATENDIMENTO. */
 export const WHATSAPP_ATENDIMENTO = (process.env.NEXT_PUBLIC_WHATSAPP_ATENDIMENTO ?? '').replace(/\D/g, '')
 
-/**
- * Link de convite da comunidade no WhatsApp (NEXT_PUBLIC_COMUNIDADE_URL). PROVISÓRIO: enquanto não
- * existir, os botões de comunidade levam ao WhatsApp do atendimento ou, sem ele, ao Instagram.
- */
-export const WHATSAPP_COMMUNITY_URL = env(
-  process.env.NEXT_PUBLIC_COMUNIDADE_URL,
-  WHATSAPP_ATENDIMENTO ? `https://wa.me/${WHATSAPP_ATENDIMENTO}` : INSTAGRAM_URL,
-)
+/** Link de convite da comunidade no WhatsApp (pode ser trocado por NEXT_PUBLIC_COMUNIDADE_URL). */
+export const WHATSAPP_COMMUNITY_URL = env(process.env.NEXT_PUBLIC_COMUNIDADE_URL, 'https://chat.whatsapp.com/GCaMBK8OFOaGqMXK7pyCSz')
 
 export const PARTNER_TAGLINE = 'Parceiro oficial'
 

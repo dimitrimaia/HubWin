@@ -74,7 +74,7 @@ A lista completa, com explicação de cada uma, está no arquivo `.env.example`.
 | `NEXT_PUBLIC_SITE_NOME` | Nome do site (padrão: `Hub Robotics`). |
 | `NEXT_PUBLIC_RESPONSAVEL_NOME` | Quem aparece no texto da comunidade (padrão: "a equipe", sem nome de pessoa). |
 | `NEXT_PUBLIC_INSTAGRAM_USUARIO` | Perfil do Instagram, sem @ (padrão: `hubcap_oficial`). |
-| `NEXT_PUBLIC_COMUNIDADE_URL` | Link da comunidade no WhatsApp, quando ela existir. Até lá, os botões levam ao WhatsApp do atendimento ou ao Instagram. |
+| `NEXT_PUBLIC_COMUNIDADE_URL` | Link da comunidade no WhatsApp (já vem com a comunidade do Hub Robotics; só mude se trocar de grupo). |
 | `NEXT_PUBLIC_WHATSAPP_ATENDIMENTO` | Número do atendimento, só dígitos com DDI e DDD (ex.: `5511900000000`). |
 
 **Opcionais (ligue quando quiser):** planilhas (`CADASTRO_WEBHOOK_URL`, `INFLUENCER_WEBHOOK_URL`,
