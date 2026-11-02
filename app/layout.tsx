@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
 })
 
-const title = `Hub Capture: ganhe dinheiro gravando vídeos com o celular | Hub App e Hub Data — Código ${REFERRAL_CODE}`
+const title = `HUB: ganhe dinheiro treinando IA e robôs | Código ${REFERRAL_CODE}`
 const description =
-  `Hub Capture é o app da Hub Data que paga até R$ 50/h para você gravar tarefas em casa ou no trabalho com o celular. Baixe o Hub App, cadastre-se grátis com o código ${REFERRAL_CODE} e saque via PIX.`
+  `HUB renda extra: treine robôs e IA gravando tarefas do dia a dia pelo celular e receba por hora aprovada via PIX. Cadastro grátis com o código ${REFERRAL_CODE}.`
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -25,22 +25,32 @@ export const metadata: Metadata = {
   description,
   applicationName: SITE_NAME,
   keywords: [
-    'hub capture',
-    'hubcapture',
-    'hub app',
-    'app hub',
-    'hub data',
-    'hubdata',
-    'hub capture app',
-    'hub capture download',
-    `código ${REFERRAL_CODE}`,
-    REFERRAL_CODE.toLowerCase(),
-    'boné hubcap',
+    'ganhar dinheiro treinando IA',
+    'renda extra com inteligência artificial',
+    'treinamento de robôs',
+    'treinamento de robôs remunerado',
+    'treinar robôs e ganhar dinheiro',
+    'como trabalhar treinando robôs',
+    'treinamento de inteligência artificial',
+    'trabalho de treinamento de IA',
+    'trabalhar com IA pelo celular',
+    'como ganhar dinheiro com IA',
     'ganhar dinheiro gravando vídeos',
-    'ganhar dinheiro com o celular',
-    'renda extra em casa',
-    'treinar inteligência artificial',
-    'starter kit hub',
+    'gravação de vídeos remunerada',
+    'renda extra pelo celular',
+    'oportunidade de renda extra',
+    'como se cadastrar para treinar IA',
+    'HUB treinamento de IA',
+    'HUB renda extra',
+    'hub',
+    'hub ia',
+    'hub robôs',
+    'hub app',
+    'hub robotics',
+    'hub treinamento',
+    'hub capture',
+    'hub data',
+    `código ${REFERRAL_CODE}`,
   ],
   alternates: { canonical: '/' },
   openGraph: {

@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { articleMetadata, ArticleLayout } from '@/components/landing/article-layout'
 import { CONFIAVEL_PATH, QUANTO_PAGA_PATH, TUTORIAIS_PATH } from '@/lib/site'
 
-const title = 'Hub Data: quanto paga por hora? Valores, categorias e pagamento via PIX'
+const title = 'Gravação de vídeos remunerada: quanto paga a Hub Data por hora?'
 const description =
-  'Quanto a Hub Data paga no Hub Capture: até R$ 35/h em casa e até R$ 50/h no trabalho por hora aprovada, o que conta como hora aprovada, calendário semanal e saque via PIX.'
+  'Quanto dá para ganhar treinando IA com gravação de vídeos remunerada: até R$ 35/h em casa e até R$ 50/h no trabalho por hora aprovada, como funciona a aprovação e o PIX.'
 
 export const metadata: Metadata = articleMetadata(QUANTO_PAGA_PATH, title, description)
 

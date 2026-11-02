@@ -10,9 +10,9 @@ import { INSTAGRAM_USUARIO, REFERRAL_CODE, SITE_URL, TUTORIAIS_PATH } from '@/li
 import { obterConfig } from '@/lib/configuracoes'
 import type { TutorialStep } from '@/lib/tutorials'
 
-const title = 'Tutoriais Hub Capture: como gravar e ganhar no Hub App passo a passo'
+const title = 'Como se cadastrar para treinar IA: tutorial HUB passo a passo'
 const description =
-  `Tutoriais em vídeo do Hub Capture: cadastro com o código ${REFERRAL_CODE}, Starter Kit, app Hub, posição do celular e como ter suas gravações aprovadas na Hub Data.`
+  `HUB treinamento de IA em vídeo: como se cadastrar com o código ${REFERRAL_CODE}, pedir o Starter Kit, posicionar o celular e ter suas gravações aprovadas.`
 
 export const metadata: Metadata = {
   title,

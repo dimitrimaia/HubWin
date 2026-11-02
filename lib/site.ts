@@ -66,58 +66,43 @@ export const HUB_DASHBOARD_URL = 'https://app.hub.xyz/train'
 
 export const faqs = [
   {
-    question: 'O que é o Hub Capture?',
+    question: 'É verdade que dá para ganhar dinheiro treinando IA?',
     answer:
-      'Hub Capture é o app oficial da Hub (Hub Data) para gravar tarefas em primeira pessoa com o celular e ganhar por hora aprovada. Também é chamado de Hub App. Você instala o app, grava a tarefa com o celular preso na cabeça e acompanha os pagamentos pelo painel. Além das tarefas do próprio Hub Capture, você pode vincular o app Minute para liberar tarefas extras, somadas no mesmo saldo.',
+      'Sim. A HUB (Hub Data) paga pessoas para gravar tarefas reais em primeira pessoa, e esses vídeos viram dados de treinamento para robôs e inteligência artificial. O pagamento é por hora de gravação aprovada, via PIX. Os valores variam por tarefa e não há ganho garantido: só conta o tempo aprovado na verificação de qualidade.',
   },
   {
-    question: 'Onde baixar o app Hub Capture?',
+    question: 'Como trabalhar treinando robôs pelo celular?',
     answer:
-      'O Hub Capture (Hub App) é gratuito no Google Play para Android e na App Store para iPhone. Os links oficiais de download estão no menu e no rodapé deste site.',
+      'Você prende o celular numa faixa de cabeça, na altura dos olhos, abre o app Hub Capture, escolhe uma tarefa (em casa ou no trabalho) e grava a atividade do começo ao fim. Depois envia o vídeo para análise. A câmera mostra suas mãos e a tarefa, não o seu rosto.',
   },
   {
-    question: 'O que é o Minute e como vinculo ao Hub Capture?',
+    question: 'Quanto paga o treinamento de robôs?',
     answer:
-      'O Minute é um segundo app com mais tarefas pagas da Hub. No painel do Hub Capture, em "Gravar e ganhar" → "Vincule sua conta do Minute", copie o e-mail e o código de convite pessoal, baixe o Minute pelos botões do painel e entre (ou cadastre-se uma única vez) com esse mesmo e-mail e código. Não crie uma segunda conta. A vinculação aparece em até cerca de 20 minutos após a primeira gravação.',
+      'Até R$ 50 por hora aprovada no modo trabalho (Comercial) e até R$ 35 por hora aprovada no modo casa (Residencial). São valores máximos, que variam de tarefa para tarefa. O saldo aprovado aparece no painel e o saque é feito via PIX, conforme o calendário semanal da sua conta.',
   },
   {
-    question: 'O que é a Hub Data?',
+    question: 'Precisa de experiência para treinar inteligência artificial?',
     answer:
-      'A Hub (também conhecida como Hub Data ou HubData) é uma startup de inteligência artificial com sede em São Francisco e escritório em São Paulo. A plataforma paga pessoas reais para gravar tarefas do dia a dia em primeira pessoa, com o celular preso a uma faixa de cabeça. Esses vídeos viram dados de treino para robôs e modelos de IA.',
+      'Não. Basta um celular Android ou iPhone com câmera boa, um lugar bem iluminado e o suporte de cabeça (o Starter Kit é enviado de graça, mas pode demorar). Não precisa editar vídeos, aparecer na câmera nem ter seguidores: nada é publicado em redes sociais.',
   },
   {
-    question: 'Quanto a Hub Data paga por hora?',
+    question: 'O que é a HUB e como funciona a renda extra?',
     answer:
-      'Até R$ 35 por hora aprovada em tarefas em casa (modo Residencial) e até R$ 50 por hora aprovada em atividades profissionais (modo Comercial). Só o tempo aprovado na verificação de qualidade é pago. Os valores são máximos e podem variar por tarefa.',
+      'A HUB, também chamada de Hub Data, é uma empresa de inteligência artificial com sede em São Francisco e escritório em São Paulo. O app dela, o Hub Capture (Hub App), paga por hora de vídeo aprovado. Você grava quando quiser, no seu ritmo, e pode vincular o app Minute (mesmo e-mail) para liberar tarefas extras somadas ao mesmo saldo.',
   },
   {
-    question: `O que é o código ${REFERRAL_CODE}?`,
+    question: `Como se cadastrar para treinar IA com o código ${REFERRAL_CODE}?`,
     answer:
-      `${REFERRAL_CODE} é o código de convite oficial para se cadastrar na Hub. Ao criar sua conta com o código ${REFERRAL_CODE}, você entra com acesso ao Starter Kit grátis e participa dos sorteios exclusivos divulgados neste site.`,
+      `Abra o link oficial ${SIGNUP_URL_CURTA}, que já aplica o código ${REFERRAL_CODE}, crie sua conta com nome, e-mail e senha e peça o Starter Kit. Depois baixe o app Hub Capture e entre com o mesmo e-mail. O cadastro é gratuito, e quem usa o código ${REFERRAL_CODE} participa dos sorteios divulgados neste site.`,
   },
   {
-    question: 'Como recebo o pagamento?',
+    question: 'Preciso pagar alguma coisa?',
     answer:
-      'O tempo aprovado entra no seu saldo e você saca via PIX ou transferência bancária, conforme o calendário de pagamentos semanais mostrado na sua conta.',
-  },
-  {
-    question: 'Preciso pagar alguma coisa para participar?',
-    answer:
-      'Não. O cadastro é gratuito e o Starter Kit (faixa de cabeça e suporte para celular) é enviado sem custo, mas pode demorar a chegar. Quem preferir pode comprar o Suporte Oficial HubCap (boné com suporte), que é opcional e chega bem mais rápido. Você não precisa indicar amigos, assistir anúncios nem comprar nada para receber.',
-  },
-  {
-    question: 'Preciso aparecer nos vídeos ou ter seguidores?',
-    answer:
-      'Não. A câmera fica na altura dos olhos e grava suas mãos e a tarefa, não o seu rosto. Os vídeos não são publicados em redes sociais, então seguidores e curtidas não importam.',
-  },
-  {
-    question: 'Qual celular preciso para gravar?',
-    answer:
-      'Um smartphone Android ou iPhone com câmera traseira em bom estado, espaço livre de armazenamento e bateria carregada. Você grava pelo app Hub Capture (App Store e Google Play) e também pode gravar tarefas extras no app Minute.',
+      'Não. O cadastro e o Starter Kit são gratuitos. Quem não quiser esperar o kit pode comprar o Suporte Oficial HubCap (boné com suporte para o celular), que é opcional. Você não precisa indicar ninguém nem assistir anúncios para receber.',
   },
   {
     question: 'Posso gravar no meu trabalho?',
     answer:
-      'Sim, no modo Comercial. Grave atividades profissionais reais durante o expediente, sempre com autorização do responsável pelo local. A plataforma tem mais de 100 tarefas em 14 setores, como construção, manutenção, oficina, varejo, restaurantes e limpeza.',
+      'Sim, no modo Comercial, sempre com autorização do responsável pelo local. Há mais de 100 tarefas em 14 setores, como construção, manutenção, oficina, varejo, restaurantes e limpeza.',
   },
 ]

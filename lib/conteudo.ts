@@ -21,16 +21,16 @@ export type ConteudoHero = {
 export type Pergunta = { question: string; answer: string }
 
 export const HERO_PADRAO: ConteudoHero = {
-  titulo: 'Filmou,',
-  destaque: 'ganhou.',
-  subtitulo: 'Ganhe dinheiro gravando vídeos com o celular.',
+  titulo: 'Ganhe dinheiro treinando',
+  destaque: 'robôs e inteligência artificial',
+  subtitulo: 'com o seu celular.',
   textoTrabalho:
-    'No app Hub Capture, da Hub Data, você grava atividades profissionais reais no seu trabalho, com o celular na faixa de cabeça. Os vídeos treinam inteligência artificial e você recebe por hora aprovada, via PIX.',
+    'Grave as tarefas que você já faz no seu trabalho e ajude a treinar robôs de verdade. Renda extra pelo celular, paga por hora de gravação aprovada, via PIX.',
   textoCasa:
-    'No app Hub Capture, da Hub Data, você grava tarefas do dia a dia em casa — cozinhar, organizar, lavar — com o celular na faixa de cabeça. Os vídeos treinam inteligência artificial e você recebe por hora aprovada, via PIX.',
+    'Grave as tarefas que você já faz em casa — cozinhar, organizar, lavar — e ajude a treinar robôs de verdade. Renda extra pelo celular, paga por hora de gravação aprovada, via PIX.',
   valorTrabalho: 'R$ 50',
   valorCasa: 'R$ 35',
-  destaques: ['Cadastro gratuito', 'Starter Kit grátis', 'Saque via PIX'],
+  destaques: ['Cadastro grátis na HUB', 'Starter Kit grátis', 'Pagamento via PIX'],
 }
 
 export type ConteudoComoFunciona = { titulo: string; subtitulo: string; passos: { titulo: string; descricao: string }[]; botao: string }
@@ -49,23 +49,24 @@ export type ConteudoHubcap = {
 export type ConteudoComunidade = { titulo: string; texto: string; beneficios: string[]; botao: string; instagramTexto: string }
 
 export const COMO_FUNCIONA_PADRAO: ConteudoComoFunciona = {
-  titulo: 'Comece a ganhar em 3 passos simples',
-  subtitulo: 'Sem equipamento caro, sem experiência com vídeo. Só o seu celular e as tarefas que você já faz.',
+  titulo: 'Como funciona o treinamento de robôs remunerado',
+  subtitulo:
+    'Robôs e sistemas de inteligência artificial aprendem observando pessoas. No app da HUB você prende o celular na cabeça, grava uma tarefa do começo ao fim (cozinhar, organizar, consertar) e envia. Cada vídeo aprovado vira dado de treinamento, e você recebe pelas horas gravadas.',
   passos: [
     {
-      titulo: 'Cadastro gratuito',
-      descricao: 'Crie sua conta em minutos e peça o Starter Kit: faixa de cabeça e suporte para o celular, enviados sem custo até você.',
+      titulo: 'Crie sua conta grátis',
+      descricao: `Cadastre-se com o código ${REFERRAL_CODE} e peça o Starter Kit: faixa de cabeça e suporte para o celular, enviados sem custo.`,
     },
     {
-      titulo: 'Capture o mundo real',
-      descricao: 'Prenda o celular na cabeça e grave tarefas cotidianas do começo ao fim — arrumar a casa, cozinhar, consertar, montar.',
+      titulo: 'Grave tarefas reais',
+      descricao: 'Com o celular na altura dos olhos, grave atividades da sua rotina em casa ou no trabalho, do começo ao fim, no seu ritmo.',
     },
     {
-      titulo: 'Receba com segurança',
-      descricao: 'Cada vídeo passa por verificação de qualidade. As horas aprovadas são creditadas no painel e pagas via PIX.',
+      titulo: 'Receba por hora aprovada',
+      descricao: 'Cada vídeo passa por uma verificação de qualidade. As horas aprovadas entram no seu saldo e são pagas via PIX.',
     },
   ],
-  botao: 'Fazer meu cadastro gratuito',
+  botao: 'Criar minha conta grátis',
 }
 
 export const HUBCAP_PADRAO: ConteudoHubcap = {

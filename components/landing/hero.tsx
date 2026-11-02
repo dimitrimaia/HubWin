@@ -74,7 +74,7 @@ export function Hero({ conteudo }: { conteudo: ConteudoHero }) {
             trabalho={
               <Image
                 src="/images/hero-recording.png"
-                alt="Profissional com celular preso na faixa de cabeça gravando o próprio trabalho para a Hub Data"
+                alt="Pessoa treinando robô: profissional grava a própria tarefa no trabalho com o celular na cabeça"
                 fill
                 priority
                 sizes="(min-width: 768px) 50vw, 100vw"
@@ -84,7 +84,7 @@ export function Hero({ conteudo }: { conteudo: ConteudoHero }) {
             casa={
               <Image
                 src="/images/hero-home.png"
-                alt="Mulher com celular preso na faixa de cabeça gravando tarefa na cozinha de casa para a Hub Data"
+                alt="Pessoa treinando inteligência artificial gravando tarefa na cozinha com o celular na cabeça"
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover object-top"

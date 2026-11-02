@@ -10,7 +10,7 @@ export function FaqSection({ faqs }: { faqs: Pergunta[] }) {
         <div className="text-center">
           <Eyebrow>FAQ</Eyebrow>
           <h2 id="faq-title" className="mt-4 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
-            Perguntas frequentes sobre a Hub Data
+            Perguntas frequentes: HUB e treinamento de IA
           </h2>
           <p className="mt-4 text-muted-foreground">Cadastro, código {REFERRAL_CODE}, gravações, aprovação e pagamentos.</p>
         </div>

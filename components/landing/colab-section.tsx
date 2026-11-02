@@ -1,7 +1,7 @@
 import { Megaphone, Users } from 'lucide-react'
 import { ColabButton } from './colab-dialog'
 import { Eyebrow } from './eyebrow'
-import { REFERRAL_CODE } from '@/lib/site'
+import { REFERRAL_CODE, SITE_NAME } from '@/lib/site'
 
 export function ColabSection() {
   return (
@@ -14,7 +14,7 @@ export function ColabSection() {
         <div className="relative flex max-w-2xl flex-col gap-4">
           <Eyebrow>Colab com Influencers</Eyebrow>
           <h2 id="colab-title" className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
-            Cria conteúdo? Seja parceiro do Hub Capture.
+            Cria conteúdo? Seja parceiro do {SITE_NAME}.
           </h2>
           <p className="text-pretty leading-relaxed text-muted-foreground">
             Criadores do Instagram e TikTok podem divulgar o Hub App com o código {REFERRAL_CODE} e fechar parcerias. Deixe seus

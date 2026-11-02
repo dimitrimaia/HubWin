@@ -16,7 +16,7 @@ import { Tutorial } from '@/components/landing/tutorial'
 import { TutorialsCard } from '@/components/landing/tutorials-card'
 import { obterConfig } from '@/lib/configuracoes'
 import type { Pergunta } from '@/lib/conteudo'
-import { APP_STORE_URL, CADASTRO_PATH, INSTAGRAM_URL, PLAY_STORE_URL, REFERRAL_CODE, SITE_URL } from '@/lib/site'
+import { APP_STORE_URL, CADASTRO_PATH, INSTAGRAM_URL, PLAY_STORE_URL, REFERRAL_CODE, SITE_NAME, SITE_URL } from '@/lib/site'
 
 /** Estático, refeito a cada hora ou na hora em que um admin salva um bloco (revalidatePath). */
 export const revalidate = 3600
@@ -37,7 +37,7 @@ const dadosEstruturados = (faqs: Pergunta[]) => ({
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
       url: SITE_URL,
-      name: 'Hub Capture — Hub App e Hub Data',
+      name: SITE_NAME,
       inLanguage: 'pt-BR',
       publisher: { '@id': `${SITE_URL}/#organization` },
     },
@@ -53,7 +53,7 @@ const dadosEstruturados = (faqs: Pergunta[]) => ({
     },
     {
       '@type': 'HowTo',
-      name: 'Como ganhar dinheiro gravando vídeos no Hub Capture (Hub Data)',
+      name: 'Como ganhar dinheiro treinando IA e robôs pelo celular',
       step: [
         {
           '@type': 'HowToStep',
