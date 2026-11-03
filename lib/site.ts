@@ -49,7 +49,7 @@ export const CONFIAVEL_PATH = '/hub-data-e-confiavel'
  * Quando comprar o domínio, troque NEXT_PUBLIC_SITE_URL na Vercel (ex.: https://seudominio.com.br)
  * e faça Redeploy · passo a passo em docs/implantacao-clone.md.
  */
-export const SITE_URL = env(process.env.NEXT_PUBLIC_SITE_URL, 'https://hubwin.vercel.app').replace(/\/+$/, '')
+export const SITE_URL = env(process.env.NEXT_PUBLIC_SITE_URL, 'https://hub-win.vercel.app').replace(/\/+$/, '')
 /** Domínio sem "https://", para mostrar em textos e exemplos. */
 export const SITE_HOST = SITE_URL.replace(/^https?:\/\//, '')
 

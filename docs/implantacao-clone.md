@@ -48,8 +48,8 @@ a dar dinheiro de forma relevante, o recomendado por eles é o plano Pro (pago).
 3. Não mude nada em "Build and Output Settings" (a Vercel detecta Next.js e pnpm sozinha).
 4. Abra **Environment Variables** e cadastre as variáveis da tabela abaixo (marque **Production**).
 5. Clique em **Deploy**. Ao terminar, a Vercel mostra o endereço provisório, algo como
-   `https://hubwin.vercel.app` (ou `hubwin-xxxx.vercel.app`).
-6. Se o endereço for diferente de `https://hubwin.vercel.app`, vá em
+   `https://hub-win.vercel.app` (ou `hubwin-xxxx.vercel.app`).
+6. Se o endereço for diferente de `https://hub-win.vercel.app`, vá em
    **Settings → Environment Variables**, ajuste `NEXT_PUBLIC_SITE_URL` para o endereço certo e
    faça **Deployments → ⋯ → Redeploy**.
 
@@ -61,7 +61,7 @@ A lista completa, com explicação de cada uma, está no arquivo `.env.example`.
 
 | Variável | O que colocar |
 | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | Endereço do site, sem barra no final. Por enquanto o da Vercel (`https://hubwin.vercel.app`). |
+| `NEXT_PUBLIC_SITE_URL` | Endereço do site, sem barra no final. Por enquanto o da Vercel (`https://hub-win.vercel.app`). |
 | `NEXT_PUBLIC_CODIGO_INDICACAO` | `WINHUB` |
 | `DATABASE_URL` | URL do **Transaction pooler** (porta 6543) do passo 1. |
 | `EQUIPE_SENHA` | Uma "chave de instalação" que você inventa (8+ caracteres). Usada para criar o primeiro admin. |
