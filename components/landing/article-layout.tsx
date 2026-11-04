@@ -1,7 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import { guides } from '@/lib/guides'
-import { REFERRAL_CODE, SITE_URL } from '@/lib/site'
+import { REFERRAL_CODE, SITE_NAME, SITE_URL } from '@/lib/site'
 import { CommunityLinks } from './community-section'
 import { CtaLink } from './cta-link'
 import { Eyebrow } from './eyebrow'
@@ -41,18 +41,22 @@ export function ArticleLayout({ path, title, description, eyebrow, heading, intr
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Hub Capture', item: SITE_URL },
+          { '@type': 'ListItem', position: 1, name: SITE_NAME, item: SITE_URL },
           { '@type': 'ListItem', position: 2, name: heading, item: url },
         ],
       },
-      {
-        '@type': 'FAQPage',
-        mainEntity: faqs.map((faq) => ({
-          '@type': 'Question',
-          name: faq.question,
-          acceptedAnswer: { '@type': 'Answer', text: faq.answer },
-        })),
-      },
+      ...(faqs.length > 0
+        ? [
+            {
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.question,
+                acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+              })),
+            },
+          ]
+        : []),
     ],
   }
   const related = guides.filter((guide) => guide.href !== path)
@@ -102,7 +106,7 @@ export function ArticleLayout({ path, title, description, eyebrow, heading, intr
           <div className="mt-10 flex flex-col gap-5 leading-relaxed text-muted-foreground [&_a]:text-primary [&_a]:underline-offset-4 [&_a:hover]:underline [&_h2]:mt-8 [&_h2]:scroll-mt-24 [&_h2]:text-balance [&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:tracking-tight [&_h2]:text-foreground [&_h3]:mt-4 [&_h3]:text-lg [&_h3]:font-semibold [&_h3]:text-foreground [&_li]:ml-5 [&_li]:list-disc [&_strong]:text-foreground">
             {children}
 
-            <h2 id="perguntas">Perguntas frequentes</h2>
+            {faqs.length > 0 && <h2 id="perguntas">Perguntas frequentes</h2>}
             {faqs.map((faq) => (
               <div key={faq.question}>
                 <h3>{faq.question}</h3>

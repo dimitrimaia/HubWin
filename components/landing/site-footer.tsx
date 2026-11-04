@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { guides } from '@/lib/guides'
 import { sectionLinks } from '@/lib/navigation'
-import { CADASTRO_PATH, HUBCAP_URL, INSTAGRAM_URL, INSTAGRAM_USUARIO, PARTNER_TAGLINE, REFERRAL_CODE, SIGNUP_URL, SIGNUP_URL_CURTA, SITE_NAME, TUTORIAIS_PATH, WHATSAPP_COMMUNITY_URL } from '@/lib/site'
+import { CADASTRO_PATH, HUBCAP_URL, INSTAGRAM_URL, INSTAGRAM_USUARIO, PARTNER_TAGLINE, REFERRAL_CODE, SIGNUP_URL, SIGNUP_URL_CURTA, SITE_NAME, TUTORIAIS_PATH, WHATSAPP_COMMUNITY_URL, PRIVACIDADE_PATH } from '@/lib/site'
 import { ColabButton } from './colab-dialog'
 import { CtaLink } from './cta-link'
 import { InstagramIcon } from './instagram-icon'
@@ -65,7 +65,12 @@ export function SiteFooter() {
         </div>
 
         <div className="flex flex-col gap-2 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:justify-between">
-          <p>{`© ${new Date().getFullYear()} ${SITE_NAME}. Divulgação do programa Hub Data com o código de convite ${REFERRAL_CODE}.`}</p>
+          <p>
+            {`© ${new Date().getFullYear()} ${SITE_NAME}. Divulgação do programa Hub Data com o código de convite ${REFERRAL_CODE}. `}
+            <Link href={PRIVACIDADE_PATH} className="underline-offset-4 hover:text-primary hover:underline">
+              Política de privacidade
+            </Link>
+          </p>
           <a
             href={SIGNUP_URL}
             target="_blank"

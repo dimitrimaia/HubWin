@@ -37,6 +37,10 @@ export const APP_STORE_URL = 'https://apps.apple.com/br/app/hub-capture/id677228
 export const APP_STORE_ID = '6772285040'
 export const HUBCAP_URL = 'https://www.mercadolivre.com.br/up/MLBU5339859880'
 
+/** E-mail de contato (privacidade e exclusão de dados). */
+export const CONTATO_EMAIL = env(process.env.NEXT_PUBLIC_CONTATO_EMAIL, 'hubrobotics.ia@gmail.com')
+
+export const PRIVACIDADE_PATH = '/privacidade'
 export const CADASTRO_PATH = '/cadastro'
 export const TUTORIAIS_PATH = '/tutoriais'
 export const GUIA_PATH = '/hub-capture-app'

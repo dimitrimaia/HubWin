@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { CADASTRO_PATH, CONFIAVEL_PATH, GUIA_PATH, QUANTO_PAGA_PATH, SITE_URL, TUTORIAIS_PATH } from '@/lib/site'
+import { CADASTRO_PATH, CONFIAVEL_PATH, GUIA_PATH, PRIVACIDADE_PATH, QUANTO_PAGA_PATH, SITE_URL, TUTORIAIS_PATH } from '@/lib/site'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date()
@@ -10,5 +10,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}${CONFIAVEL_PATH}`, lastModified, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${SITE_URL}${TUTORIAIS_PATH}`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}${CADASTRO_PATH}`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${SITE_URL}${PRIVACIDADE_PATH}`, lastModified, changeFrequency: 'yearly', priority: 0.2 },
   ]
 }
