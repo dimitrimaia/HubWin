@@ -7,6 +7,7 @@ import {
   REFERRAL_CODE,
   SIGNUP_URL,
   SITE_URL,
+  WHATSAPP_ATENDIMENTO,
   WHATSAPP_COMMUNITY_URL,
   SITE_HOST,
   SITE_NAME,
@@ -65,7 +66,8 @@ function conhecimento(faqs: Pergunta[], tutorialSteps: TutorialStep[]) {
 - App Hub Capture no Google Play (Android): ${PLAY_STORE_URL}
 - App Hub Capture na App Store (iPhone): ${APP_STORE_URL}
 - Suporte Oficial HubCap (boné com suporte para celular, pago, chega mais rápido que o Starter Kit): ${HUBCAP_URL}
-- Comunidade do ${SITE_NAME} no WhatsApp: ${WHATSAPP_COMMUNITY_URL}
+- Comunidade do ${SITE_NAME} no WhatsApp (dicas e novidades): ${WHATSAPP_COMMUNITY_URL}${WHATSAPP_ATENDIMENTO ? `\n- WhatsApp do atendimento (falar com o assistente ou com a equipe): https://wa.me/${WHATSAPP_ATENDIMENTO}` : ''}
+- Para falar com uma pessoa da equipe aqui mesmo, basta escrever "atendente"
 - Instagram: ${INSTAGRAM_URL}
 - Tutoriais em vídeo: ${SITE_URL}/tutoriais`
 }
@@ -131,7 +133,9 @@ function chaveCache(historico: MensagemChat[], canal: Canal) {
 /** Gera a resposta do assistente. Lança AssistenteIndisponivel sem chave ou se o Gemini falhar. */
 export async function gerarResposta(historico: MensagemChat[], canal: Canal): Promise<string> {
   if (historico.length === 1 && historico[0].role === 'user') {
-    const pronta = respostaPronta(historico[0].content, await obterConfig('respostas_prontas'), await obterConfig('tutoriais'))
+    const lista = await obterConfig('respostas_prontas')
+    // A resposta "whatsapp" manda abrir o WhatsApp: só faz sentido no chat do site.
+    const pronta = respostaPronta(historico[0].content, canal === 'whatsapp' ? lista.filter((item) => item.id !== 'whatsapp') : lista, await obterConfig('tutoriais'))
     if (pronta) return pronta
   }
   const chave = chaveCache(historico, canal)

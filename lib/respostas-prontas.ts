@@ -1,4 +1,5 @@
-import { APP_STORE_URL, PLAY_STORE_URL, REFERRAL_CODE, SIGNUP_URL, SITE_URL, TUTORIAIS_PATH, WHATSAPP_COMMUNITY_URL } from './site'
+import { waLink } from './phone'
+import { APP_STORE_URL, PLAY_STORE_URL, REFERRAL_CODE, SIGNUP_URL, SITE_NAME, SITE_URL, TUTORIAIS_PATH, WHATSAPP_ATENDIMENTO, WHATSAPP_COMMUNITY_URL } from './site'
 import { type TutorialStep, tutorialSteps } from './tutorials'
 
 /** Deixa a pergunta comparável: minúsculas, sem acentos, sem pontuação, espaços únicos. */
@@ -13,6 +14,18 @@ export function normalizarPergunta(texto: string) {
 }
 
 const URL_TUTORIAIS = `${SITE_URL}${TUTORIAIS_PATH}`
+
+/** Link do WhatsApp do atendimento (vazio se NEXT_PUBLIC_WHATSAPP_ATENDIMENTO não estiver configurado). */
+const URL_WHATSAPP = WHATSAPP_ATENDIMENTO ? waLink(WHATSAPP_ATENDIMENTO, `Oi! Vim pelo site ${SITE_NAME} e tenho uma dúvida.`) : ''
+
+const RESPOSTA_WHATSAPP = URL_WHATSAPP
+  ? `Você pode falar com a gente de duas formas:
+
+- **Atendimento no WhatsApp:** [abrir conversa](${URL_WHATSAPP}). O assistente responde na hora e, se precisar, uma pessoa da equipe assume.
+- **Aqui mesmo no chat:** escreva **atendente** que alguém da equipe responde nesta conversa.
+
+Para dicas e novidades, entre também na [comunidade do WhatsApp](${WHATSAPP_COMMUNITY_URL}).`
+  : `Escreva **atendente** aqui no chat que uma pessoa da equipe responde nesta conversa. Para dicas e novidades, entre na [comunidade do WhatsApp](${WHATSAPP_COMMUNITY_URL}).`
 
 /**
  * Tutorial completo, montado com os mesmos passos da página /tutoriais (editáveis no site):
@@ -50,6 +63,11 @@ ${videos} Comece pelo [cadastro com o ${REFERRAL_CODE}](${SIGNUP_URL}).`
 export type RespostaPronta = { id: string; gatilhos: string[]; resposta: string }
 
 export const RESPOSTAS_PRONTAS_PADRAO: RespostaPronta[] = [
+  {
+    id: 'whatsapp',
+    gatilhos: ['whatsapp', 'whats', 'zap', 'wpp', 'numero do whatsapp', 'qual o whatsapp', 'tem whatsapp', 'falar no whatsapp', 'atendimento no whatsapp', 'contato', 'suporte'],
+    resposta: RESPOSTA_WHATSAPP,
+  },
   {
     id: 'tutorial',
     gatilhos: ['Tutorial completo', 'tutorial', 'passo a passo', 'passo a passo completo', 'como começar', 'por onde começo', 'quero o tutorial', 'me manda o tutorial'],
