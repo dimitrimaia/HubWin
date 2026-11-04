@@ -136,17 +136,7 @@ Se for um projeto avulso, troque `SpreadsheetApp.getActiveSpreadsheet()` por `Sp
 
 O arquivo `.env.example` do repositório não é lido em produção; sem a variável na Vercel os leads só aparecem nos logs.
 
-## 4. Trocar a URL que ficou pública (influencers)
-
-A URL antiga da planilha de influencers chegou a ficar no `.env.example` deste repositório público. Quem tiver a URL
-consegue **enviar** linhas falsas para a planilha. Gere uma nova e desative a antiga:
-
-1. Na planilha de influencers: Extensões → Apps Script → **Implantar → Gerenciar implantações**.
-2. Selecione a implantação atual → **Arquivar** (a URL antiga para de funcionar).
-3. **Implantar → Nova implantação** (App da Web, Executar como: Eu, Acesso: Qualquer pessoa) → copie a nova URL `/exec`.
-4. Na Vercel, atualize `INFLUENCER_WEBHOOK_URL` com a nova URL e faça redeploy.
-
-## 5. Testar
+## 4. Testar
 
 - Abra a URL `/exec` no navegador: deve aparecer `{"ok":true,"status":"online"}`.
   Se pedir login do Google, o acesso não está como "Qualquer pessoa".
